@@ -1,0 +1,93 @@
+.conteudo-principal {
+    display: grid;
+    justify-content: center;
+    padding: 100px;
+}
+.main-menu li {
+    list-style-type: none;
+    font-family: 'VALORANT';
+    font-weight: bolder;
+    padding: 25px;
+    color: rgb(253, 65, 65);
+    transition: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+.main-menu li:hover {
+    font-size: larger;
+    transition: .2s;
+}
+.main-menu , .selected {
+    font-size: larger;
+}
+.main-menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+body {
+    background-image: url('../images/background.jpg_large');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.apresentacao {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.apresentacao h1 {
+    font-family: 'VALORANT';
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: rgb(253, 65, 65);
+    cursor: context-menu;
+    user-select: none;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.479);
+  width: 80px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 250px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.agentes {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+.agentes .agente img {
+  width: 150px;
+}
+.display-name  {
+  font-family: 'VALORANT';
+  font-weight: bolder;
+  color: rgb(253, 65, 65);
+}
+.idioma-button {
+  background-image: url('../images/language.png');
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  width: 49px;
+  height: 42px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+}
