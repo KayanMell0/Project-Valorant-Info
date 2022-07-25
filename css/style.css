@@ -66,6 +66,9 @@ a {
 .container {
   padding: 2px 16px;
 }
+.agente-displayed {
+  background-color: rgb(255, 255, 255);
+}
 .agentes {
   display: flex;
   padding: 10px;
@@ -73,6 +76,17 @@ a {
 }
 .agentes .agente img {
   width: 150px;
+}
+.ultimo-agente {
+  width: 150px;
+}
+.agente-selecionado .agente {
+  width: 100px;
+  transition: .3s;
+}
+.agente-selecionado .agente img {
+  width: 100px;
+  transition: .3s;
 }
 .display-name  {
   font-family: 'VALORANT';

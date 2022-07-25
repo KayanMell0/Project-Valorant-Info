@@ -32,7 +32,7 @@ $(document).ready(function(){
                         $('<img>').attr('src', agente.displayIcon)
                     )
                     .append(
-                        $('<input>').attr('type','hidden').val(agente.uuid)
+                        $('<input>').attr('type','hidden').val(agente.displayName)
                     )
                     .append(
                         $('<div>').addClass('container')
@@ -45,6 +45,19 @@ $(document).ready(function(){
                     $('<div>').addClass('infoAgente').text(agente.description).attr('style','display:none;').attr('agente',agente.displayName)
                 );
             });
+            $('.agente').last().addClass('ultimo-agente');
+            $('.agente').click(function () {
+                $('.agentes').addClass('agente-selecionado');
+                $('.agente').removeClass('agente-displayed');
+                $(this).addClass('agente-displayed');
+                let agenteClicado = $(this);
+                $('.infoAgente').each(function (){
+                    $(this).css('display', 'none');
+                    if ($(this).attr('agente') == agenteClicado.find('input').val()){
+                        $(this).css('display', 'block');
+                    }
+                })
+            })
         })
     }
     function exibirInfoAgente(agente) {
